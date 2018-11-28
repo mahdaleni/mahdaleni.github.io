@@ -250,7 +250,7 @@ var app = new Vue({
       this.syncStatus = 'syncing';
       this.sync = db.sync(this.syncURL, {
         live: true,
-        retry: false
+        retry: true
       }).on('change', (info) => {
         // handle change
         // if this is an incoming change
