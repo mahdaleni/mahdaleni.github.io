@@ -85,7 +85,7 @@ Vue.material.registerTheme('default', {
   primary: 'red',
   accent: 'white',
   warn: 'red',
-  background: 'grey'
+  background: 'blue'
 });
 
 // this is the Vue.js app. It contains
