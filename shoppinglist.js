@@ -82,10 +82,10 @@ Vue.use(VueMaterial);
 
 // Vue Material theme
 Vue.material.registerTheme('default', {
-  primary: 'red',
+  primary: 'purple',
   accent: 'white',
   warn: 'red',
-  background: 'blue'
+  background: 'grey'
 });
 
 // this is the Vue.js app. It contains
