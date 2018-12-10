@@ -410,7 +410,7 @@ var app = new Vue({
      */
     onBack: function() {
       this.mode='showlist';
-      this.pagetitle='Shopping Lists';
+      this.pagetitle='Database Lists';
     },
 
     /**
