@@ -97,7 +97,7 @@ var app = new Vue({
   el: '#app',
   data: {
     mode: 'showlist',
-    pagetitle: 'DataBase',
+    pagetitle: 'Data',
     shoppingLists: [],
     shoppingListItems: [],
     singleList: null,
@@ -373,7 +373,7 @@ var app = new Vue({
       this.singleList = JSON.parse(JSON.stringify(sampleShoppingList));
       this.singleList._id = 'list:' + cuid();
       this.singleList.createdAt = new Date().toISOString();
-      this.pagetitle = 'New DataBase';
+      this.pagetitle = 'New Data';
       this.places = [];
       this.selectedPlace = null;
       this.mode='addlist';
@@ -410,7 +410,7 @@ var app = new Vue({
      */
     onBack: function() {
       this.mode='showlist';
-      this.pagetitle='Database Lists';
+      this.pagetitle='Data Lists';
     },
 
     /**
