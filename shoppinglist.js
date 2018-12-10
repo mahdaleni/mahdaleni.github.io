@@ -97,7 +97,7 @@ var app = new Vue({
   el: '#app',
   data: {
     mode: 'showlist',
-    pagetitle: 'Shopping Lists',
+    pagetitle: 'Maydata',
     shoppingLists: [],
     shoppingListItems: [],
     singleList: null,
