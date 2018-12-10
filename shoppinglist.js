@@ -97,7 +97,7 @@ var app = new Vue({
   el: '#app',
   data: {
     mode: 'showlist',
-    pagetitle: 'DataBASE',
+    pagetitle: 'DataBase',
     shoppingLists: [],
     shoppingListItems: [],
     singleList: null,
