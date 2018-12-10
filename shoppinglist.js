@@ -82,7 +82,7 @@ Vue.use(VueMaterial);
 
 // Vue Material theme
 Vue.material.registerTheme('default', {
-  primary: 'blue',
+  primary: 'red',
   accent: 'white',
   warn: 'red',
   background: 'grey'
