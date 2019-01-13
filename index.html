@@ -74,13 +74,13 @@
           <!-- shopping place name -->
           <md-input-container>
             <label>Place name</label>
-            <md-input placeholder="e.g. Whole Foods, Pekanbaru" v-model="singleList.place.title"></md-input>
+            <md-input placeholder="e.g. Jalan Riau, Pekanbaru" v-model="singleList.place.title"></md-input>
             <md-button class="md-raised" v-bind:disabled="singleList.place.title.length==0" v-on:click="onClickLookup">Lookup</md-button>             
           </md-input-container>   
 
           <!-- shopping place pull-down list -->
           <md-input-container v-if="places.length > 1">
-            <label for="movie">Choose address</label>
+            <label for="movie">Pilih Alamat</label>
             <md-select v-bind="selectedPlace" v-on:change="onChangePlace" v-bind:disabled="places.length == 0">
               <md-option v-for="place in places" :key="place.place_id" v-bind:value="place.place_id">{{ place.display_name }}</md-option>
             </md-select>
@@ -232,7 +232,7 @@
               <md-input placeholder="e.g http://pass:user/data-name" type="url" v-model="syncURL"></md-input>
             </md-input-container>  
 
-            <h4>Sync Status</h4>
+            <h4>Check Status</h4>
 
             <!-- visualisation of sync status -->
             <md-chip v-if="syncStatus == 'notsyncing'">Not Syncing</md-chip>
@@ -243,16 +243,21 @@
           <md-card-actions>
             <!-- submit button that saves the Cloudant URL -->
             <md-button v-on:click="onClickStartSync">
-                Start Sync
+                Start SEND
             </md-button>
           </md-card-actions> 
         </md-card> <!-- settings -->
 
       <!-- about -->
       <md-card v-if="mode == 'about'">
-          <md-card-header>About</md-card-header>
+          <md-card-header>TENTANG APLIKASI</md-card-header>
           <md-card-content>
-          for better network solutions - By Rif
+          Aplikasi ini mengirimkan data secara simultan ke pengguna secara realtime ke semua perangkat dengan peramban konvensional maupun modern .
+          . Aplikasi ini dapat mengirim dan menerima data saat kondisi sinyal yang rendah.
+            Developer : Z. Arif, ST 
+            MORE INFO : Facebook/codingx 
+            Privatecode : Pengajar dan Praktisi  IT / Aplikasi Website dan Android
+            
           </md-card-content>
 
           <md-card-actions>
